@@ -3,7 +3,8 @@ import './fonts.css'
 
 const Card = styled.div`
   transition: all 0.3s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
   transform: scale(1);
   display: flex;
   width: 380px;
@@ -15,7 +16,7 @@ const Card = styled.div`
   background-color: rgb(255, 255, 255);
   &:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 `;
 const PostTitle = styled.div`
