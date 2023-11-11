@@ -1,16 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 import styled from "styled-components";
+import './fonts.css';
+import Header from'./Header.js';
+import PostBox from './PostBox.js';
 
-const LeftBox = styled.div`
-	width: 30%;
-  height: 100vh;
-  background-color: #252525;
-`;
-
-function App() {
+const App = () => {
   return (
-    <LeftBox>ㅇㅇ</LeftBox>
+    <div class="container">
+      <Header></Header>
+      <PostBox></PostBox>
+    </div>
   );
 }
 
