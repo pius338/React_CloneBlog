@@ -23,7 +23,7 @@ const PostTitle = styled.div`
   text-align: left;
   color: rgb(138, 146, 255);
   font-family: Pretendard-Bold;
-  font-size: 1.3vw;
+  font-size: 30px;
   margin: 10px 25px 0px;
 `;
 const DateText = styled.div`
@@ -31,7 +31,7 @@ const DateText = styled.div`
   text-align: left;
   color: rgb(65, 65, 65);;
   font-family: Pretendard-light;
-  font-size: 0.8vw;
+  font-size: 20px;
   margin: 5px 25px 0px;
 `;
 const HashText = styled.div`
@@ -39,7 +39,7 @@ const HashText = styled.div`
   text-align: left;
   color: rgb(80, 80, 80);;
   font-family: Pretendard-light;
-  font-size: 0.8vw;
+  font-size: 20px;
   margin: 5px 25px 0px;
 `;
 
