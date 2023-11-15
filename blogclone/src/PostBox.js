@@ -9,6 +9,9 @@ const RightContainer = styled.div`
   justify-content: space-evenly;
   padding: 0px 0px 0px 25%;
   background-color: rgb(255, 255, 255);
+  @media screen and (max-width: 1400px){
+  padding: 0px 5px 0px 5px;   
+  }
 `;
 
 const PostContainer = styled.div`

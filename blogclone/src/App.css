@@ -50,4 +50,7 @@ hr {
   height: 4px;
   width: 80%;
   background-color: rgb(255, 255, 255);
+  @media screen and (max-width: 1400px){
+    display: none;
+  }
 }

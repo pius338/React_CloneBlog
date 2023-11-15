@@ -32,6 +32,11 @@ const LeftContainer = styled.div`
   left: 0;
   top: 0;
   position: fixed;
+
+  @media screen and (max-width: 1400px){
+    width: 100%;
+    height: 10vw;
+  }
 `;
 const BigTitle = styled.p`
   text-align: left;
@@ -39,6 +44,10 @@ const BigTitle = styled.p`
   font-family: Pretendard-Bold  ;
   font-size: 3.5vw;
   margin: 0px 10% 0px;
+  @media screen and (max-width: 1400px){
+    font-size: 2.5vw;
+    margin: 0px 3% 10px;
+  }
 `;
 const SnsButtons = styled.div`
   display: flex;
@@ -47,6 +56,9 @@ const SnsButtons = styled.div`
   margin-left: 10%;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 1400px){
+    display: none;
+  }
 `;
 
 const Header = () => {
