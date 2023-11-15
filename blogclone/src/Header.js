@@ -11,6 +11,27 @@ const LeftContainer = styled.div`
   align-items: start;
   justify-content: flex-end;
   background-color: rgb(138, 146, 255);
+
+  animation-name: ANIMATION_NAME;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  
+  @keyframes ANIMATION_NAME{
+      0% {
+        width: 100%;
+      }
+      50% {
+        width: 100%;
+      }
+      100% {
+        width: 25%;
+      }
+  }
+
+  left: 0;
+  top: 0;
+  position: fixed;
 `;
 const BigTitle = styled.p`
   text-align: left;
@@ -22,7 +43,7 @@ const BigTitle = styled.p`
 const SnsButtons = styled.div`
   display: flex;
   width: 80%;
-  height: 50px;
+  height: 100px;
   margin-left: 10%;
   flex-direction: row;
   justify-content: space-between;

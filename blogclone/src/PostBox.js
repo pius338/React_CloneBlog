@@ -7,7 +7,7 @@ const RightContainer = styled.div`
   width: 100%;
   height: 100vh;
   justify-content: space-evenly;
-  padding: 0px 20px 0px;
+  padding: 0px 0px 0px 25%;
   background-color: rgb(255, 255, 255);
 `;
 

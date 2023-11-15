@@ -7,8 +7,8 @@ import PostBox from './PostBox.js';
 const Home = () => {
   return (
     <div class="container">
+      <PostBox></PostBox>      
       <Header></Header>
-      <PostBox></PostBox>
     </div>
   );
 }
