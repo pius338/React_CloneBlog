@@ -1,16 +1,18 @@
 
 import './App.css';
-import styled from "styled-components";
 import './fonts.css';
-import Header from'./Header.js';
-import PostBox from './PostBox.js';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PostView from './PostView';
+import Home from './Home';
 
 const App = () => {
   return (
-    <div class="container">
-      <Header></Header>
-      <PostBox></PostBox>
-    </div>
+    <BrowserRouter>
+			<Routes>
+				<Route path="/" element={ <Home/> } />
+				<Route path="/postview/:postID" element={ <PostView/> } />
+			</Routes>
+		</BrowserRouter>
   );
 }
 

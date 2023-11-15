@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import './fonts.css'
 
 const Card = styled.div`
@@ -44,18 +45,20 @@ const HashText = styled.div`
   margin: 5px 25px 0px;
 `;
 
-const PostCard = () => {
+const PostCard = (props) => {
     return (
-      <Card>
-        <img 
-          src="/img/newton.png" 
-          alt="my image"
-          style={{ width: '380px', height: '380px' }}
-        />
-        <PostTitle>포스팅 제목</PostTitle>
-        <DateText>Feb 2, 2023</DateText>
-        <HashText>#와우</HashText>
-      </Card>
+      <Link to={ props.link } style={{ textDecoration: "none"}}>
+        <Card>
+          <img 
+            src={ props.imgpath } 
+            alt="my image"
+            style={{ width: '380px', height: '380px' }}
+          />
+          <PostTitle>{ props.title }</PostTitle>
+          <DateText>{ props.date }</DateText>
+          <HashText>{ props.tag }</HashText>
+        </Card>
+      </Link>
     );
 }
 
